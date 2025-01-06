@@ -25,13 +25,16 @@ public class MeinSocketThread extends Thread{
       auswahl = socket.readLine();
       switch(auswahl){
         case "1": haengemaennchen(); break;
-        case "2": montagsmaler(); break; 
+        case "2": mastermind(); break; 
         case "3": gluecksrad(); break;
         case "4": schnickSchnackSchnuck(); break;
         case "5": ticTacToe(); break;
         case "0": {
             socket.write("\n\r\n\rUnd tschuess!!!");
-            try{Thread.sleep(2000);}catch (Exception e){}
+            try{
+              Thread.sleep(2000);
+            }catch (Exception e){
+            }
             break;
         } 
       }
@@ -40,7 +43,10 @@ public class MeinSocketThread extends Thread{
     }catch(IOException io){}
   }
   public void haengemaennchen(){}
-  public void montagsmaler(){}
+  public void mastermind(){
+    Mastermind mastermind = new Mastermind(socket);
+    Mastermind.main();
+  }
   public void gluecksrad(){}
   public void schnickSchnackSchnuck(){}
   public void ticTacToe(){}
