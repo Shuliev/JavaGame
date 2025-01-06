@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TicTacToe",
+            "request": "launch",
+            "mainClass": "TicTacToe",
+            "projectName": "JavaGame_e3bdeecc"
+        },
+        {
+            "type": "java",
             "name": "ServerMultithread",
             "request": "launch",
             "mainClass": "ServerMultithread",

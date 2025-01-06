@@ -49,5 +49,8 @@ public class MeinSocketThread extends Thread{
   }
   public void gluecksrad(){}
   public void schnickSchnackSchnuck(){}
-  public void ticTacToe(){}
+  public void ticTacToe(){
+    TicTacToe ticTacToe = new TicTacToe(socket);
+    TicTacToe.main();
+  }
 }
